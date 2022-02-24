@@ -26,6 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_24_222342) do
     t.string "day"
     t.time "opening"
     t.time "closing"
+    t.boolean "day_off", default: false, null: false
     t.bigint "shop_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

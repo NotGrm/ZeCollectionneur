@@ -12,6 +12,9 @@ class OpeningHour < ApplicationRecord
   belongs_to :shop
 
   validates :day, presence: true
-  validates :opening, presence: true
-  validates :closing, presence: true, comparison: { greater_than: :opening }
+
+  with_options unless: :day_off? do
+    validates :opening, presence: true
+    validates :closing, presence: true, comparison: { greater_than: :opening }
+  end
 end
