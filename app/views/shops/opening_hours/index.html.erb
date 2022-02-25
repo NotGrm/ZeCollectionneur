@@ -4,8 +4,6 @@
 
 <table>
   <tbody>
-    <%= render partial: "day",
-               collection: @rotated_days,
-               locals: { grouped_opening_hours: @grouped_opening_hours } %>
+    <%= render @working_days %>
   </tbody>
 </table>

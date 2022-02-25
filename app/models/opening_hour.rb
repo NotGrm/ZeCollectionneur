@@ -17,4 +17,8 @@ class OpeningHour < ApplicationRecord
     validates :opening, presence: true
     validates :closing, presence: true, comparison: { greater_than: :opening }
   end
+
+  def working_day
+    WorkingDay.new(day)
+  end
 end
