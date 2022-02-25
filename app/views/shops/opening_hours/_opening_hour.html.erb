@@ -1,0 +1,7 @@
+<% if opening_hour.day_off? %>
+  <%= "Fermé" %>
+<% else %>
+  <%= opening_hour_to_human(opening_hour) %>
+<% end %>
+
+

@@ -1,0 +1,11 @@
+<h1><%= @shop.name %></h1>
+
+<h2>Horaires</h2>
+
+<table>
+  <tbody>
+    <%= render partial: "day",
+               collection: @rotated_days,
+               locals: { grouped_opening_hours: @grouped_opening_hours } %>
+  </tbody>
+</table>
