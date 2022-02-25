@@ -1,24 +1,22 @@
-# README
+# Ze Collectionneur
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+Ce projet utilise un environnement Docker en utilisant VScode et l'extension [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-* Ruby version
+Mais il est aussi possible d'utiliser un environnement non containerisé, il suffit juste de définir les variables d'environnement
 
-* System dependencies
+- `POSTGRES_USER`
+- `POSTGRES_PASSWORD`
+- `POSTGRES_HOST`
 
-* Configuration
+Une fois l'environnement prêt exécutez les commandes `bin/setup` et `bin/rails db:seed`
 
-* Database creation
+## Exercice 1
 
-* Database initialization
+Les requêtes SQL se trouvent dans le dossier [db/queries](db/queries)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Exercice 2
 
-* Deployment instructions
-
-* ...
+Pour tester le projet lancez votre server Rails et ouvrez l'url http://localhost:3000/shops
